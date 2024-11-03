@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="estilos.css" type="text/css" rel="stylesheet"/>
+    <title>Diseña tu Camiseta</title>
+</head>
+<body>
+    <div class="contenedor">
+        <div class="controles">
+            <div>
+                <label for="titulo">Título: </label>
+                <input type="text" id="titulo" placeholder="Escribe un título..."/>
+            </div>
+            <div>
+                <label for="posX">Posición X: </label>
+                <input type="range" id="posX"  value="50" name="posX">
+            </div>
+            <div>
+                <label for="posY">Posición Y: </label>
+                <input type="range" id="posY" value="50" name="posY">
+            </div>
+            <div>
+                <label>Color de camiseta: </label>
+                <input type="radio" id="blanca" name="color" value="blanca" checked>
+                <label for="blanca">Blanca</label>
+                <input type="radio" id="negra" name="color" value="negra">
+                <label for="negra">Negra</label>
+            </div>
+
+        <div class="imagenes-disponibles">
+            <img src="img/img1.png" draggable="true" id="img1" class="imagen-arrastrable" data-title="Triss Merigold & Yennefer">
+            <img src="img/img2.png" draggable="true" id="img2" class="imagen-arrastrable" data-title="Geralt Of Rivia">
+            <img src="img/img3.png" draggable="true" id="img3" class="imagen-arrastrable" data-title="Ciri">
+            <img src="img/img4.png" draggable="true" id="img4" class="imagen-arrastrable" data-title="The Wild Hunt">
+        </div>
+
+        </div>
+    
+        <div class="camiseta-contenedor">
+            <h1 id="tituloPrincipal">THE WITCHER 3</h1>
+            <div id="camiseta" class="camiseta">
+                <img id="imagen-camiseta" src="img/camiseta/white.png">
+                <div id="texto-personalizado"></div>
+                <div id="imagen-grande"></div>
+                <div id="imagen-pecho"></div>
+            </div>
+        </div>
+
+    </div>
+    <script src="main.js"></script>   
+</body>
+</html>

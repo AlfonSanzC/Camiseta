@@ -1,0 +1,73 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background: rgb(212, 240, 248);
+}
+
+.controles{
+
+    margin-top: 100px;
+    margin-left: 20px;
+    border: 5px solid lightgreen;
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 0;
+    height: 380px;
+
+}
+
+.contenedor {
+    display: flex;
+}
+
+.imagenes-disponibles{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: 50px;
+}
+
+.imagen-arrastrable {
+    cursor: move;
+}
+
+#img1{
+    height: 100px;
+    width: 100px;
+}
+#img2{
+
+    height: 100px;
+    width: 100px;
+}
+#img3{
+    height: 100px;
+    width: 100px;
+}
+
+#img4{
+    height: 110px;
+    width: 110px;
+}
+
+#texto-personalizado {
+    position: absolute;
+    font-size: 20px;
+}
+
+/*Cambiar Estilo Letra Titulo*/
+@font-face {
+    font-family: 'The Witcher';
+    src: url('Thewitcher-jnOj.ttf') format('truetype');
+}
+
+
